@@ -9,7 +9,7 @@ const Featured = () => {
   return (
     <>
       <div id="featured">
-        <div className="container wrapper">
+        <div className="container">
           <div className="featured-projects">
             {featuredlist.map((project, index) => {
               const { _id } = project;

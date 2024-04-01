@@ -10,7 +10,7 @@ const FStack = () => {
   return (
     <>
       <div id="featured">
-        <div className="container wrapper">
+        <div className="container">
           <div className="featured-projects block">
             {Fstack.length !== 0 ? (
               Fstack.map((project, index) => {
