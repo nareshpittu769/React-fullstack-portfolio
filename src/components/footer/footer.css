@@ -1,0 +1,65 @@
+#footer {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightyellow;
+  margin-top: 30px;
+}
+#footer .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#footer .container .navlinks {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  flex-wrap: wrap;
+}
+#footer .container .navlinks .navlink:hover {
+  color: rgb(40, 133, 102);
+}
+#footer .container .social-links {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+#footer .container .social-links .link:hover {
+  color: rgb(40, 133, 102);
+}
+@media screen and (min-width: 768px) {
+  #footer .container .navlinks {
+    display: flex;
+    gap: 3em;
+    font-size: 20px;
+    font-weight: 400;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  #footer .container .navlinks .navlink:hover {
+    color: rgb(40, 133, 102);
+  }
+  #footer .container .social-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 3em;
+    font-size: 24px;
+    font-weight: 400;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  #footer .container .social-links .link:hover {
+    color: rgb(40, 133, 102);
+  }
+}

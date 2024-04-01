@@ -1,0 +1,55 @@
+#login {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 100px;
+  align-items: center;
+  background-color: rgb(159, 197, 185);
+}
+
+#login .container {
+  width: 100%;
+}
+#login .container .row1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+#login .container .row1 .img-div {
+  aspect-ratio: 330/230;
+  overflow: hidden;
+}
+#login .container .row1 .img-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#login .container .row1 .button {
+  background-color: rgb(37, 91, 135);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  #login .container .row1 .img-div {
+    aspect-ratio: 500/00;
+    overflow: hidden;
+  }
+  #login .container .row1 .button {
+    background-color: rgb(37, 91, 135);
+    color: white;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+  }
+}

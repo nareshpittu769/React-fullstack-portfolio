@@ -1,0 +1,118 @@
+#about {
+  width: 100%;
+  background-color: rgb(237, 250, 247);
+  overflow: hidden;
+}
+#about .container {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#about .container .row1 {
+  width: 100%;
+}
+#about .container .row1 .col1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#about .container .row1 .col1 h2 {
+  font-family: cursive;
+  font-size: 35px;
+}
+#about .container .row1 .col1 h1 {
+  font-size: 25px;
+  color: #3a9ad6;
+  text-shadow: 1px 1px 1px #3b6d8c;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+#about .container .row2 {
+  width: 100%;
+}
+#about .container .row2 .skills {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#about .container .row2 .skills span {
+  border: 1px solid #3a9ad6;
+  background-color: #3b6d8c;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+#about .container .row3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#about .container .row3 .col1 {
+  display: flex;
+  overflow-x: scroll;
+  background-color: transparent;
+  border-radius: 5px;
+  gap: 15px;
+  padding: 8px;
+}
+
+#about .container .row3 .col1 span {
+  background-color: #3b6d8c;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
+#about .container .row3 .col2 {
+  width: 100%;
+}
+#about .container .row3 .col2 .card {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* responsive design */
+
+@media screen and (min-width: 768px) {
+  #about .container {
+    padding-top: 16vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #about .container .row3 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  #about .container .row3 .col1 {
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+    background-color: transparent;
+    border-radius: 5px;
+    gap: 15px;
+    padding: 8px;
+    width: 40%;
+  }
+  #about .container .row3 .col1 span {
+    display: inline-block;
+    width: 70%;
+  }
+}

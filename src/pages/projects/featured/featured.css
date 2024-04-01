@@ -1,0 +1,77 @@
+#featured {
+  width: 100%;
+}
+
+.container .featured-projects .card {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px 0px;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 0.8s;
+}
+.container .featured-projects .card:hover {
+  transform: scale(1.04);
+}
+.container .featured-projects .card .img-div {
+  aspect-ratio: 290/170;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.container .featured-projects .card .img-div img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.container .featured-projects .card .data-div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.container .featured-projects .card .data-div h1 {
+  font-size: 25px;
+  text-wrap: wrap;
+  text-align: center;
+}
+.featured-projects .card > span {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 10px;
+  padding: 6px;
+  background-color: rgb(167, 239, 108);
+  border-radius: 10px;
+}
+.featured-projects .card .data-div .technologies {
+  display: flex;
+  flex-wrap: wrap;
+}
+.featured-projects .card .data-div .technologies span {
+  background-color: rgb(144, 143, 143);
+  padding: 8px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: white;
+}
+.featured-projects .card .data-div .links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.featured-projects .card .data-div .links .link {
+  font-size: 18px;
+}
+.featured-projects .card .data-div .links .link i {
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .container .featured-projects {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+}

@@ -1,0 +1,194 @@
+:root {
+  --clr-blue: #3a9ad6;
+  --clr-thickgrey: #3a4856;
+  --clr-light-grey: #9eadbd;
+  --clr-black: #09211e;
+  --clr-white: #fff;
+  --clr-white-grey: #eefbff;
+  --clr-green-grey: #e6f4f1;
+  --clr-yellow-grey: #ffeccc;
+  --btn-radius: 4px;
+  --clr-light-blue: #00bee3;
+}
+.dark {
+  background-color: rgb(57, 57, 57) !important;
+  color: #0c7c9b !important;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline-width: 2px;
+  outline-offset: 1px;
+  outline-color: var(--clr-light-blue);
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.block {
+  display: block !important;
+}
+.paddingTopMobile-ten {
+  padding-top: 10px;
+}
+.paddingTopMobile-two {
+  padding-top: 20px;
+}
+.paddingTopMobile-three {
+  padding-top: 30px;
+}
+.paddingTopMobile-four {
+  padding-top: 40px;
+}
+.paddingTopMobile-five {
+  padding-top: 50px;
+}
+.paddingTopMobile-six {
+  padding-top: 60px;
+}
+.paddingTopMobile-sev {
+  padding-top: 70px;
+}
+.paddingTopMobile-eig {
+  padding-top: 80px;
+}
+.paddingTopMobile-nin {
+  padding-top: 90px;
+}
+.paddingTopMobile-hun {
+  padding-top: 100px;
+}
+
+.paddingBottomMobile-ten {
+  padding-top: 10px;
+}
+.paddingBottomMobile-two {
+  padding-top: 20px;
+}
+.paddingBottomMobile-three {
+  padding-top: 30px;
+}
+.paddingBottomMobile-four {
+  padding-top: 40px;
+}
+.paddingBottomMobile-five {
+  padding-top: 50px;
+}
+.paddingBottomMobile-six {
+  padding-top: 60px;
+}
+.paddingBottomMobile-sev {
+  padding-top: 70px;
+}
+.paddingBottomMobile-eig {
+  padding-top: 80px;
+}
+.paddingBottomMobile-nin {
+  padding-top: 90px;
+}
+.paddingBottomMobile-hun {
+  padding-top: 100px;
+}
+
+.paddingTopDesktop-ten {
+  padding-top: 10px;
+}
+.paddingTopDesktop-two {
+  padding-top: 20px;
+}
+.paddingTopDesktop-three {
+  padding-top: 30px;
+}
+.paddingTopDesktop-four {
+  padding-top: 40px;
+}
+.paddingTopDesktop-five {
+  padding-top: 50px;
+}
+.paddingTopDesktop-six {
+  padding-top: 60px;
+}
+.paddingTopDesktop-sev {
+  padding-top: 70px;
+}
+.paddingTopDesktop-eig {
+  padding-top: 80px;
+}
+.paddingTopDesktop-nin {
+  padding-top: 90px;
+}
+.paddingTopDesktop-hun {
+  padding-top: 100px;
+}
+
+.paddingBottomDesktop-ten {
+  padding-top: 10px;
+}
+.paddingBottomDesktop-two {
+  padding-top: 20px;
+}
+.paddingBottomDesktop-three {
+  padding-top: 30px;
+}
+.paddingBottomDesktop-four {
+  padding-top: 40px;
+}
+.paddingBottomDesktop-five {
+  padding-top: 50px;
+}
+.paddingBottomDesktop-six {
+  padding-top: 60px;
+}
+.paddingBottomDesktop-sev {
+  padding-top: 70px;
+}
+.paddingBottomDesktop-eig {
+  padding-top: 80px;
+}
+.paddingBottomDesktop-nin {
+  padding-top: 90px;
+}
+.paddingBottomDesktop-hun {
+  padding-top: 100px;
+}
+
+.btn-mobile {
+  width: 150px;
+  height: 40px;
+  border-radius: var(--btn-radius);
+  background-color: cadetblue;
+  color: var(--clr-white);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.8s;
+}
+.btn-mobile:hover {
+  background-color: var(--clr-white);
+  color: cadetblue;
+}
+
+.btn-desktop {
+  width: 250px;
+  height: 50px;
+  border-radius: var(--btn-radius);
+  background-color: cadetblue;
+  color: var(--clr-white);
+  font-size: 16px;
+  cursor: pointer;
+}
