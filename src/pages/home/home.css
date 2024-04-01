@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  gap: 18 px;
+  gap: 18px;
   padding-top: 40px;
 }
 .container .home-data > h2 {

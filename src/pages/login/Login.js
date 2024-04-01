@@ -3,7 +3,6 @@ import "./login.css";
 import { Link } from "react-router-dom";
 import authimg from "../../assets/authimg.svg";
 import { useAuth0 } from "@auth0/auth0-react";
-import { useNavigate } from "react-router-dom";
 import Footer from "../../components/footer/Footer.js";
 import { Usercontext } from "../../App.js";
 
@@ -11,9 +10,7 @@ import { Usercontext } from "../../App.js";
 const Login = () => {
   const { loginWithRedirect } = useAuth0();
   const { darkmode } = useContext(Usercontext);
-
-  const navigate = useNavigate();
-  console.log(loginWithRedirect);
+  
   return (
     <>
       <div id="login" className={darkmode ? "dark" : ""}>
@@ -26,7 +23,6 @@ const Login = () => {
               className="button mb-8"
               onClick={() => {
                 loginWithRedirect();
-                navigate("/", { replace: true });
               }}
             >
               Login/Register <i className="fa-solid fa-right-to-bracket"></i>
