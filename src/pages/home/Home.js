@@ -10,7 +10,7 @@ import { Usercontext } from "../../App.js";
 
 const Home = () => {
   const projects = Featured.slice(0, 6) || [];
-  const { darkmode, setdarkmode } = useContext(Usercontext);
+  const { darkmode } = useContext(Usercontext);
   const id = uuid();
   return (
     <>

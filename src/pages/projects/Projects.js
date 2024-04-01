@@ -8,7 +8,7 @@ import { Usercontext } from "../../App.js";
 
 const Projects = () => {
   // const id = uuid();
-  const { darkmode, setdarkmode } = useContext(Usercontext);
+  const { darkmode } = useContext(Usercontext);
 
 
   return (

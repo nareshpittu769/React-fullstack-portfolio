@@ -6,7 +6,7 @@ import { Usercontext } from "../../App.js";
 
 const Profile = () => {
   const { user } = useAuth0();
-  const { darkmode, setdarkmode } = useContext(Usercontext);
+  const { darkmode } = useContext(Usercontext);
 
   return (
     <>

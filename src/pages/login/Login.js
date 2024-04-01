@@ -10,7 +10,7 @@ import { Usercontext } from "../../App.js";
 
 const Login = () => {
   const { loginWithRedirect } = useAuth0();
-  const { darkmode, setdarkmode } = useContext(Usercontext);
+  const { darkmode } = useContext(Usercontext);
 
   const navigate = useNavigate();
   console.log(loginWithRedirect);

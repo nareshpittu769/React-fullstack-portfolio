@@ -9,7 +9,7 @@ import { Usercontext } from "../../App.js";
 
 const About = () => {
   const [eduinx, seteduinx] = useState(0);
-  const { darkmode, setdarkmode } = useContext(Usercontext);
+  const { darkmode } = useContext(Usercontext);
 
   return (
     <>

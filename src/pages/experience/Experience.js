@@ -8,7 +8,7 @@ import { Usercontext } from "../../App.js";
 
 const Experience = () => {
   const [select, setSelect] = useState(0);
-  const { darkmode, setdarkmode } = useContext(Usercontext);
+  const { darkmode } = useContext(Usercontext);
 
   return (
     <>
