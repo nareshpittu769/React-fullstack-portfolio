@@ -4,6 +4,15 @@ import "./index.css";
 import App from "./App.js";
 import { BrowserRouter } from "react-router-dom";
 import { Auth0Provider } from "@auth0/auth0-react";
+const onRedirectCallback = appState => {
+  window.history.replaceState(
+    {},
+    document.title,
+    appState && appState.targetUrl
+      ? appState.targetUrl
+      : window.location.pathname
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

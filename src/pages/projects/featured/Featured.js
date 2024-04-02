@@ -42,7 +42,7 @@ const Featured = () => {
                         Live
                       </Link>
                       <Link
-                        to={project.gitlink}
+                        to={`/projectdetails${_id}`}
                         className="link"
                         target="_blank"
                       >
