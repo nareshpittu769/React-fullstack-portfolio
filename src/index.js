@@ -14,6 +14,9 @@ root.render(
       authorizationParams={{
         redirect_uri: window.location.origin,
       }}
+      onRedirectCallback={onRedirectCallback}
+      useRefreshTokens
+      cacheLocation="localstorage"
     >
       <App />
     </Auth0Provider>
