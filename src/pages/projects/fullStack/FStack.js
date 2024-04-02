@@ -52,7 +52,6 @@ const FStack = () => {
                         <Link
                           to={`/projectdetails/${_id}`}
                           className="link"
-                          target="_blank"
                         >
                           View
                         </Link>
