@@ -1,4 +1,4 @@
-import React,{useContext} from "react";
+import React, { useContext } from "react";
 import { Link, Outlet } from "react-router-dom";
 import "./project.css";
 // import { v4 as uuid } from "uuid";
@@ -10,19 +10,18 @@ const Projects = () => {
   // const id = uuid();
   const { darkmode } = useContext(Usercontext);
 
-
   return (
     <>
       <div id="projects" className={darkmode ? "dark" : ""}>
         <div className="container wrapper">
           <Title title="Projects" />
-          <div className="row1">
+          <div className="row1 ">
             <nav className="nested-nav">
               <Link
                 className="text-sky-700  link underline decoration-solid underline-offset-2"
                 to="/projects/featured"
               >
-                Featured Projects
+                Front-End Projects
               </Link>
               <Link
                 className="text-sky-700 link  underline decoration-solid underline-offset-2"
@@ -31,7 +30,9 @@ const Projects = () => {
                 Full-Stack Projects
               </Link>
             </nav>
-            <Outlet />
+            <div className="div" data-aos="zoom-in" data-aos-duration="800">
+              <Outlet />
+            </div>
           </div>
         </div>
         <Footer />

@@ -11,11 +11,15 @@ const Featured = () => {
       <div id="featured">
         <div className="container">
           <div className="featured-projects">
-            {featuredlist.map((project, index) => {
+            {featuredlist.length!==0?(featuredlist.map((project, index) => {
               const { _id } = project;
               return (
                 <div className="card" key={project._id}>
-                  <span>{project.status}</span>
+                  <span className={
+                      project.status !== "pending"
+                        ? "bg-lime-300"
+                        : "bg-orange-400"
+                    }>{project.status}</span>
                   <Link to={`/projectdetails/${_id}`}>
                     <div className="img-div">
                       <img src={project.pimg} alt="img" />
@@ -55,7 +59,9 @@ const Featured = () => {
                   </div>
                 </div>
               );
-            })}
+            })):(<h1 className="text-2xl text-sky-800 text-center block">
+            No Projects
+          </h1>)}
           </div>
         </div>
       </div>

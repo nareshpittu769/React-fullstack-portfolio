@@ -52,7 +52,15 @@ const Home = () => {
             {projects.length !== 0 ? (
               projects.map((project) => (
                 <div className="card" key={id}>
-                  <span>{project.status}</span>
+                  <span
+                    className={
+                      project.status !== "pending"
+                        ? "bg-lime-300"
+                        : "bg-orange-400"
+                    }
+                  >
+                    {project.status}
+                  </span>
                   <div className="img-div">
                     <img src={project.pimg} alt="img" />
                   </div>

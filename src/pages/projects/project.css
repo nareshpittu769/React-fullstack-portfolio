@@ -2,6 +2,10 @@
   width: 100%;
   background-color: rgb(237, 250, 247);
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #projects .container {
   padding-top: 100px;
@@ -13,6 +17,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 50vh;
+  justify-content: center;
   gap: 10px;
 }
 #projects .container .row1 .nested-nav {

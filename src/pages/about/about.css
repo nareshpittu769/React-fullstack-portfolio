@@ -86,7 +86,7 @@
 
 /* responsive design */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   #about .container {
     padding-top: 16vh;
     display: flex;

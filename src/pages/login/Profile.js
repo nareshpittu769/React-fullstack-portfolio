@@ -1,4 +1,4 @@
-import React,{useContext} from "react";
+import React, { useContext } from "react";
 import "./profile.css";
 import { useAuth0 } from "@auth0/auth0-react";
 import Footer from "../../components/footer/Footer.js";
@@ -27,28 +27,36 @@ const Profile = () => {
               } Information`}</h1>
               <div className="data">
                 <div className="propety">
-                  <h1 className="bg-emerald-400 inline text-xl p-1 text-center">
-                    Name
-                  </h1>
-                  <h1 className="bg-emerald-400 inline text-xl p-1 text-center">
-                    Family Name
-                  </h1>
-                  <h1 className="bg-emerald-400 inline text-xl p-1 text-center">
-                    Nick Name
-                  </h1>
-                  <h1 className="bg-emerald-400 inline text-xl p-1 text-center">
-                    Email
-                  </h1>
-                  <h1 className="bg-emerald-400 inline text-xl p-1 text-center">
-                    Last login
-                  </h1>
-                </div>
-                <div className="values">
-                  <h1>{user?.given_name || ""}</h1>
-                  <h1>{user?.family_name || ""}</h1>
-                  <h1>{user?.nickname || ""}</h1>
-                  <h1>{user?.email || ""}</h1>
-                  <h1>{user?.updated_at.split("T")[0] || ""}</h1>
+                  <div className="userdata">
+                    <h1 className="bg-emerald-400 inline text-xl p-1 text-center">
+                      Name
+                    </h1>
+                    <h2>{user?.given_name || ""}</h2>
+                  </div>
+                  <div className="userdata">
+                    <h1 className="bg-emerald-400 inline text-xl p-1 text-center">
+                      Family Name
+                    </h1>
+                    <h2>{user?.family_name || ""}</h2>
+                  </div>
+                  <div className="userdata">
+                    <h1 className="bg-emerald-400 inline text-xl p-1 text-center">
+                      Nick Name
+                    </h1>
+                    <h2>{user?.nickname || ""}</h2>
+                  </div>
+                  <div className="userdata">
+                    <h1 className="bg-emerald-400 inline text-xl p-1 text-center">
+                      Email
+                    </h1>
+                    <h2>{user?.email || ""}</h2>
+                  </div>
+                  <div className="userdata">
+                    <h1 className="bg-emerald-400 inline text-xl p-1 text-center">
+                      Last login
+                    </h1>
+                    <h2>{user?.updated_at.split("T")[0] || ""}</h2>
+                  </div>
                 </div>
               </div>
             </div>

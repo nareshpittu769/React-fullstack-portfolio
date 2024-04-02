@@ -38,7 +38,7 @@
 #footer .container .social-links .link:hover {
   color: rgb(40, 133, 102);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   #footer .container .navlinks {
     display: flex;
     gap: 3em;

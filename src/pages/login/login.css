@@ -23,10 +23,13 @@
 #login .container .row1 .img-div {
   aspect-ratio: 330/230;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #login .container .row1 .img-div img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   object-fit: cover;
 }
 #login .container .row1 .button {
@@ -38,7 +41,7 @@
   border-radius: 4px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   #login .container .row1 .img-div {
     aspect-ratio: 500/00;
     overflow: hidden;

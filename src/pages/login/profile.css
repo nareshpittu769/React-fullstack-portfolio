@@ -16,7 +16,7 @@
 }
 #profile .container .row1 {
   width: 100%;
-  height: 100vh;
+  min-height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +27,7 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
+  width: 100%;
 }
 #profile .container .row1 .col1 .img-div {
   width: 100px;
@@ -40,30 +41,68 @@
   height: 100%;
   border-radius: 50%;
 }
+#profile .container .row1 .col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
 
 #profile .container .row1 .col2 .data {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #profile .container .row1 .col2 .data .propety {
-  display: inline-flex;
+  width: 100%;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   gap: 6px;
 }
-#profile .container .row1 .col2 .data .values {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 20px;
+#profile .container .row1 .col2 .data .propety .userdata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
+#profile .container .row1 .col2 .data .propety .userdata h1 {
+  padding: 8px;
+  border-radius: 5px;
+}
+#profile .container .row1 .col2 .data .propety .userdata h2 {
+  font-size: medium;
+}
+
 .inline {
   display: inline !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  #profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 20vh;
+    background-color: var(--clr-white-grey);
+  }
   #profile .container .row1 {
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 50px;
+  }
+  #profile .container .row1 .col1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #profile .container .row1 .col2 .data .propety {
   }
 }

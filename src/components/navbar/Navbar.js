@@ -93,18 +93,44 @@ const Navbar = () => {
                 </button>
               </Link>
               {isAuthenticated ? (
-                <NavLink
-                  className="navlink"
-                  style={styles}
-                  to=""
-                  onClick={() =>
-                    logout({
-                      logoutParams: { returnTo: window.location.origin },
-                    })
-                  }
-                >
-                  Logout
-                </NavLink>
+                // <NavLink
+                //   className="navlink"
+                //   style={styles}
+                //   to=""
+                //   title={user.name}
+                //   onClick={() =>
+                //     logout({
+                //       logoutParams: { returnTo: window.location.origin },
+                //     })
+                //   }
+                // >
+                //   Logout
+                // </NavLink>
+                <div className="dropdown" onClick={handlelog}>
+                  <img
+                    src={user.picture}
+                    alt="userpicture"
+                    className="userpicture min-w-6 w-8 rounded-full outline outline-offset-4 outline-sky-400 cursor-pointer"
+                  />
+                  <div
+                    className={
+                      logclick ? "dropdown-content-block" : "dropdown-content"
+                    }
+                  >
+                    <Link to="/profile" onClick={handleClick}>Profile</Link>
+                    <Link
+                      onClick={() => {
+                        logout({
+                          logoutParams: { returnTo: window.location.origin },
+                        });
+                        alert(`${user.name} loggedout`);
+                        handleClick()
+                      }}
+                    >
+                      Logout
+                    </Link>
+                  </div>
+                </div>
               ) : (
                 <NavLink
                   className="navlink"

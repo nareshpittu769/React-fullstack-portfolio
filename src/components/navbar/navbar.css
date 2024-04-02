@@ -34,7 +34,7 @@
 #navbar .navlinks-container {
   position: absolute;
   top: 0px;
-  left: -780px;
+  left: -1000px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,7 +82,7 @@
   color: rgb(18, 112, 112);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   #navbar {
     width: 100%;
     min-height: 10vh;

@@ -27,6 +27,9 @@
   letter-spacing: 1px;
 }
 .container .featured-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
   width: 100%;
 }
 .container .featured-projects .card {
@@ -67,7 +70,6 @@
   left: -10px;
   font-size: 10px;
   padding: 6px;
-  background-color: rgb(167, 239, 108);
   border-radius: 10px;
 }
 .featured-projects .card .data-div .technologies {
@@ -101,7 +103,7 @@
   margin-right: 5px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .container {
     padding-top: 18vh;
   }
