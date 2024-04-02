@@ -49,7 +49,6 @@ const Featured = () => {
                         <Link
                           to={`/projectdetails/${_id}`}
                           className="link"
-                          target="_blank"
                         >
                           View
                         </Link>
