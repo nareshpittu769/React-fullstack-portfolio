@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   background-color: var(--clr-white-grey);
 }
 #profile .container {
@@ -16,7 +15,6 @@
 }
 #profile .container .row1 {
   width: 100%;
-  min-height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;

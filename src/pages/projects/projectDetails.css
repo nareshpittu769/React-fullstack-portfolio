@@ -1,8 +1,6 @@
 #projectdetails {
   width: 100%;
   padding-top: 120px;
-  min-height: 100vh;
-
   background-color: rgb(232, 244, 244);
 }
 #projectdetails .container {
