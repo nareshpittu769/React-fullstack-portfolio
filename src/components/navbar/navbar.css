@@ -1,6 +1,5 @@
 #navbar {
   width: 100%;
-  max-height: 12vh;
   background-color: white;
   position: fixed;
   top: 0;
@@ -82,8 +81,6 @@
   color: rgb(18, 112, 112);
 }
 
-
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -117,16 +114,12 @@
   border-radius: 10px;
 }
 
-
-
-@media screen and (min-width:768px) {
-  
+@media screen and (min-width: 768px) {
 }
 
 @media screen and (min-width: 992px) {
   #navbar {
     width: 100%;
-    max-height: 12vh;
     padding: 10px 0px;
     z-index: 20;
   }
