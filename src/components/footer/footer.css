@@ -34,7 +34,7 @@
   font-size: 20px;
   font-weight: 400;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 #footer .container .social-links .link:hover {
   color: rgb(40, 133, 102);
