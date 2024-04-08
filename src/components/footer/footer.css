@@ -1,55 +1,58 @@
 #footer {
   width: 100%;
+  min-width: 390px;
+  max-height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: lightyellow;
   margin-top: 30px;
 }
-#footer .container {
+#footer .footer {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px;
   gap: 20px;
 }
-#footer .container .navlinks {
+#footer .footer .navlinks {
   display: flex;
   gap: 20px;
   font-size: 16px;
   font-weight: 400;
   flex-wrap: wrap;
-  margin: 20px 0px;
+  margin: 10px 0px;
 }
-#footer .container .navlinks .navlink:hover {
+#footer .footer .navlinks .navlink:hover {
   color: rgb(40, 133, 102);
 }
-#footer .container .social-links {
+#footer .footer .social-links {
   display: flex;
   justify-content: space-around;
   gap: 20px;
   font-size: 20px;
   font-weight: 400;
   flex-wrap: wrap;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
-#footer .container .social-links .link:hover {
+#footer .footer .social-links .link:hover {
   color: rgb(40, 133, 102);
 }
 @media screen and (min-width: 992px) {
-  #footer .container .navlinks {
+  #footer .footer .navlinks {
     display: flex;
     gap: 3em;
     font-size: 20px;
     font-weight: 400;
     flex-wrap: wrap;
   }
-  #footer .container .navlinks .navlink:hover {
+  #footer .footer .navlinks .navlink:hover {
     color: rgb(40, 133, 102);
   }
-  #footer .container .social-links {
+  #footer .footer .social-links {
     display: flex;
     justify-content: space-around;
     gap: 3em;
@@ -57,7 +60,7 @@
     font-weight: 400;
     flex-wrap: wrap;
   }
-  #footer .container .social-links .link:hover {
+  #footer .footer .social-links .link:hover {
     color: rgb(40, 133, 102);
   }
 }

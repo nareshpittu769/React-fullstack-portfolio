@@ -5,6 +5,7 @@ import "./project.css";
 import Title from "../../components/Title.js";
 import Footer from "../../components/footer/Footer.js";
 import { Usercontext } from "../../App.js";
+// import Skeleton from "../../components/navbar/Skeleton.js";
 
 const Projects = () => {
   // const id = uuid();
@@ -35,6 +36,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
+        {/* <Skeleton /> */}
         <Footer />
       </div>
     </>

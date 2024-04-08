@@ -1,0 +1,69 @@
+#contact {
+  width: 100%;
+}
+#contact .row1 {
+  width: 100%;
+  display: flex;
+}
+#contact .row1 .img-div {
+  flex-basis: 50%;
+  flex-shrink: 0;
+}
+#contact .row1 .img-div img {
+  width: 75%;
+  height: 85%;
+  object-fit: cover;
+  object-position: center;
+}
+#contact .row1 .form {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+#contact .row1 .form input {
+  width: 100%;
+  min-width: 390px;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: 1px solid black;
+  background-color: aliceblue;
+  border-radius: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+#contact .row1 .form textarea {
+  width: 100%;
+  min-width: 390px;
+  background-color: aliceblue;
+  border: 1px solid black;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: "Times New Roman", Times, serif;
+  resize: vertical;
+}
+
+#contact .row1 .form button {
+  width: 100%;
+  min-width: 350px;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: 1px solid black;
+  background-color: aliceblue;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+@media screen and (max-width: 991px) {
+  #contact .row1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #contact .row1 .img-div {
+    display: none;
+  }
+}

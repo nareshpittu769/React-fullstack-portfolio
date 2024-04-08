@@ -1,4 +1,4 @@
-import React, { useState,useContext } from "react";
+import React, { useState, useContext } from "react";
 // import { Link } from "react-router-dom";
 import "./about.css";
 import Title from "../../components/Title.js";
@@ -6,6 +6,7 @@ import { skills, eduaction } from "../../utils/skills.js";
 import Footer from "../../components/footer/Footer.js";
 import Typewriter from "typewriter-effect";
 import { Usercontext } from "../../App.js";
+import Contact from "./contact/Contact.js";
 
 const About = () => {
   const [eduinx, seteduinx] = useState(0);
@@ -86,6 +87,7 @@ const About = () => {
               }
             </div>
           </div>
+          <Contact />
         </div>
         <Footer />
       </div>

@@ -1,12 +1,13 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import "./footer.css";
+
 const Footer = () => {
   const handleClick = () => {};
   return (
     <>
       <div id="footer">
-        <div className="container wrapper">
+        <div className="footer wrapper">
           <div className="navlinks">
             <NavLink className="navlink" to="/" onClick={handleClick}>
               Home
@@ -56,6 +57,15 @@ const Footer = () => {
               <i class="fa-brands fa-linkedin"></i>
             </Link>
           </div>
+          <p>
+            {" "}
+            Copyright &copy; 2023-
+            {new Date().getFullYear()}{" "}
+            <a href="##" className="underline text-cyan-500">
+              Naresh Chandragiri
+            </a>
+            All Rights Reserved
+          </p>
         </div>
       </div>
     </>

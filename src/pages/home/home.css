@@ -5,7 +5,6 @@
 }
 
 .container {
-  padding-top: 10vh;
 }
 
 .container .home-data {
@@ -105,7 +104,7 @@
 
 @media screen and (min-width: 992px) {
   .container {
-    padding-top: 18vh;
+    padding-top: 150px;
   }
 
   .container .home-data {
