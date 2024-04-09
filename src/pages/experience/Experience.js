@@ -41,7 +41,7 @@ const Experience = () => {
               >
                 {
                   <div className="card text-wrap">
-                    <h1 className="text-orange-500 font-bold tracking-wider">
+                    <h1 className="text-orange-500 uppercase font-bold tracking-wider">
                       {exper[select].exp.company}
                     </h1>
                     <h1 className="text-sky-500 font-medium">

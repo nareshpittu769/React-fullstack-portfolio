@@ -19,13 +19,13 @@ const Projects = () => {
           <div className="row1 ">
             <nav className="nested-nav">
               <Link
-                className="text-sky-700  link underline decoration-solid underline-offset-2"
+                className="text-sky-700 bg-cyan-100  p-2 rounded-md  link underline decoration-solid underline-offset-2"
                 to="/projects/featured"
               >
                 Front-End Projects
               </Link>
               <Link
-                className="text-sky-700 link  underline decoration-solid underline-offset-2"
+                className="text-sky-700 bg-cyan-100  p-2 rounded-md link  underline decoration-solid underline-offset-2"
                 to="/projects/fstack"
               >
                 Full-Stack Projects

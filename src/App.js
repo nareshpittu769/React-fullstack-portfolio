@@ -5,6 +5,8 @@ import { Routes, Route } from "react-router-dom";
 import Notfound from "./components/Notfound.js";
 import Login from "./pages/login/Login.js";
 import Skeleton from "./components/navbar/Skeleton.js";
+import ScrollToTop from "react-scroll-to-top";
+
 
 // import Footer from './components/footer/Footer.js'
 const LazyHome = React.lazy(() => import("./pages/home/Home.js"));
@@ -113,6 +115,14 @@ function App() {
         </Routes>
         {/* <Footer/> */}
       </Usercontext.Provider>
+      <ScrollToTop
+          smooth
+          style={{
+            backgroundColor: "lightblue",
+            textAlign: "center",
+            padding: "8px",
+          }}
+        />
     </div>
   );
 }

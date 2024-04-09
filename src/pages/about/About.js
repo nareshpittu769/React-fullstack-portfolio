@@ -44,7 +44,13 @@ const About = () => {
           <div className="row2">
             <div className="skills">
               {skills.map((skill, index) => (
-                <span key={index}>{skill}</span>
+                <span
+                  key={skill.id}
+                  className="flex items-center text-lg gap-2 cursor-pointer"
+                >
+                  <skill.icon className="icon text-white text-lg" />
+                  {skill.name}
+                </span>
               ))}
             </div>
           </div>
@@ -68,10 +74,10 @@ const About = () => {
             <div className="col2">
               {
                 <div className="card">
-                  <h1 className="text-cyan-800 font-sans font-semibold tracking-wide mb-6 text-center ">
+                  <h1 className="text-cyan-800 uppercase font-sans font-semibold tracking-wide mb-6 text-center ">
                     {eduaction[eduinx].edu.title}
                   </h1>
-                  <p className="text-base font-serif">
+                  <p className="text-base font-serif capitalize">
                     {eduaction[eduinx].edu.stream}
                   </p>
                   <p className="text-base font-serif">

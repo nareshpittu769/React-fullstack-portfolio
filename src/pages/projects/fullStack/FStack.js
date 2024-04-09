@@ -11,9 +11,7 @@ const FStack = () => {
     <>
       <div id="featured">
         <div className="container">
-          <div
-            className="featured-projects block"
-          >
+          <div className="featured-projects block">
             {Fstack.length !== 0 ? (
               Fstack.map((project, index) => {
                 const { _id } = project;
@@ -34,10 +32,12 @@ const FStack = () => {
                       </div>
                     </Link>
                     <div className="data-div">
-                      <h1>{project.title}</h1>
+                      <h1 className="uppercase">{project.title}</h1>
                       <div className="technologies">
                         {project.techstack.map((tech) => (
-                          <span key={id}>{tech}</span>
+                          <span key={id} className="uppercase">
+                            {tech}
+                          </span>
                         ))}
                       </div>
                       <div className="links">
@@ -49,10 +49,7 @@ const FStack = () => {
                           <i className="fa-solid fa-arrow-up-right-from-square"></i>
                           Live
                         </Link>
-                        <Link
-                          to={`/projectdetails/${_id}`}
-                          className="link"
-                        >
+                        <Link to={`/projectdetails/${_id}`} className="link">
                           View
                         </Link>
                         <Link

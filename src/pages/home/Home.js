@@ -65,7 +65,7 @@ const Home = () => {
                     <img src={project.pimg} alt="img" />
                   </div>
                   <div className="data-div">
-                    <h1>{project.title}</h1>
+                    <h1 className="uppercase font-normal">{project.title}</h1>
                     <div className="technologies">
                       {project.techstack.map((tech) => (
                         <span key={id}>{tech}</span>
@@ -98,6 +98,7 @@ const Home = () => {
             )}
           </div>
         </div>
+
         <Footer />
       </section>
     </>

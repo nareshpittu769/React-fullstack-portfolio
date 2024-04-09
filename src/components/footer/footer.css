@@ -41,6 +41,9 @@
 #footer .footer .social-links .link:hover {
   color: rgb(40, 133, 102);
 }
+#footer .footer > p {
+  font-size: 0.7em;
+}
 @media screen and (min-width: 992px) {
   #footer .footer .navlinks {
     display: flex;
@@ -62,5 +65,8 @@
   }
   #footer .footer .social-links .link:hover {
     color: rgb(40, 133, 102);
+  }
+  #footer .footer > p {
+    font-size: 1em;
   }
 }

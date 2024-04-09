@@ -1,14 +1,25 @@
+import { BsFiletypeCss, BsFiletypeHtml } from "react-icons/bs";
+import { RiJavascriptFill, RiReactjsFill } from "react-icons/ri";
+import { FaNode } from "react-icons/fa";
+import {
+  SiExpress,
+  SiGit,
+  SiMongodb,
+  SiPython,
+  SiTailwindcss,
+} from "react-icons/si";
+
 export const skills = [
-  "Html",
-  "css",
-  "javascript",
-  "react js",
-  "node js",
-  "express js",
-  "mongodb",
-  "python",
-  "git",
-  "tailwind css",
+  { id: 0, name: "html", icon: BsFiletypeHtml },
+  { id: 1, name: "css", icon: BsFiletypeCss },
+  { id: 2, name: "javascript", icon: RiJavascriptFill },
+  { id: 3, name: "react js", icon: RiReactjsFill },
+  { id: 4, name: "node js", icon: FaNode },
+  { id: 5, name: "express js", icon: SiExpress },
+  { id: 6, name: "mongodb", icon: SiMongodb },
+  { id: 7, name: "Python", icon: SiPython },
+  { id: 8, name: "Git", icon: SiGit },
+  { id: 9, name: "Tailwind css", icon: SiTailwindcss },
 ];
 
 export const eduaction = [
@@ -42,5 +53,4 @@ export const eduaction = [
       location: "Ananthapur, Andra-Pradesh, India",
     },
   },
-  
 ];

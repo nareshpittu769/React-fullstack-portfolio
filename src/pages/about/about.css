@@ -51,6 +51,11 @@
   border-radius: 4px;
   text-transform: uppercase;
 }
+#about .container .row2 .skills span:hover,
+#about .container .row2 .skills span:hover .icon {
+  background-color: white;
+  color: #3b6d8c;
+}
 
 #about .container .row3 {
   width: 100%;
