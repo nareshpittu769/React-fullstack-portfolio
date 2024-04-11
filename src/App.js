@@ -6,7 +6,9 @@ import Notfound from "./components/Notfound.js";
 import Login from "./pages/login/Login.js";
 import Skeleton from "./components/navbar/Skeleton.js";
 import ScrollToTop from "react-scroll-to-top";
-
+import PrivateRoute from "./components/PrivateRoute.js";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // import Footer from './components/footer/Footer.js'
 const LazyHome = React.lazy(() => import("./pages/home/Home.js"));
@@ -31,6 +33,7 @@ function App() {
 
   return (
     <div className="App">
+      <ToastContainer/>
       <Usercontext.Provider
         value={{ darkmode: darkmode, setdarkmode: setdarkmode }}
       >
@@ -98,7 +101,9 @@ function App() {
             path="/projectdetails/:proId"
             element={
               <React.Suspense fallback="Loading...">
-                <LazyProjectDetails />
+                <PrivateRoute>
+                  <LazyProjectDetails />
+                </PrivateRoute>
               </React.Suspense>
             }
           />
@@ -116,13 +121,13 @@ function App() {
         {/* <Footer/> */}
       </Usercontext.Provider>
       <ScrollToTop
-          smooth
-          style={{
-            backgroundColor: "lightblue",
-            textAlign: "center",
-            padding: "8px",
-          }}
-        />
+        smooth
+        style={{
+          backgroundColor: "lightblue",
+          textAlign: "center",
+          padding: "8px",
+        }}
+      />
     </div>
   );
 }

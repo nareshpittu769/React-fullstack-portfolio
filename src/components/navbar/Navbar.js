@@ -6,12 +6,15 @@ import { IoMdSunny, IoMdMoon } from "react-icons/io";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Usercontext } from "../../App.js";
 
+
 const Navbar = () => {
   let [show, setShow] = useState(false);
+
   const { darkmode, setdarkmode } = useContext(Usercontext);
-  console.log(darkmode);
+
   let [logclick, setlogclick] = useState(false);
   const { isAuthenticated, logout, user } = useAuth0();
+
   const handlemode = () => {
     setdarkmode(!darkmode);
   };
@@ -93,19 +96,6 @@ const Navbar = () => {
                 </button>
               </Link>
               {isAuthenticated ? (
-                // <NavLink
-                //   className="navlink"
-                //   style={styles}
-                //   to=""
-                //   title={user.name}
-                //   onClick={() =>
-                //     logout({
-                //       logoutParams: { returnTo: window.location.origin },
-                //     })
-                //   }
-                // >
-                //   Logout
-                // </NavLink>
                 <div className="dropdown" onClick={handlelog}>
                   <img
                     src={user.picture}
@@ -117,14 +107,15 @@ const Navbar = () => {
                       logclick ? "dropdown-content-block" : "dropdown-content"
                     }
                   >
-                    <Link to="/profile" onClick={handleClick}>Profile</Link>
+                    <Link to="/profile" onClick={handleClick}>
+                      Profile
+                    </Link>
                     <Link
                       onClick={() => {
                         logout({
                           logoutParams: { returnTo: window.location.origin },
                         });
-                        alert(`${user.name} loggedout`);
-                        handleClick()
+                        handleClick();
                       }}
                     >
                       Logout
@@ -193,19 +184,6 @@ const Navbar = () => {
                 </button>
               </Link>
               {isAuthenticated ? (
-                // <NavLink
-                //   className="navlink"
-                //   style={styles}
-                //   to=""
-                //   title={user.name}
-                //   onClick={() =>
-                //     logout({
-                //       logoutParams: { returnTo: window.location.origin },
-                //     })
-                //   }
-                // >
-                //   Logout
-                // </NavLink>
                 <div className="dropdown" onClick={handlelog}>
                   <img
                     src={user.picture}
@@ -223,7 +201,6 @@ const Navbar = () => {
                         logout({
                           logoutParams: { returnTo: window.location.origin },
                         });
-                        alert(`${user.name} loggedout`);
                       }}
                     >
                       Logout

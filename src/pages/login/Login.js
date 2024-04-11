@@ -1,4 +1,4 @@
-import React,{useContext} from "react";
+import React, { useContext } from "react";
 import "./login.css";
 import { Link } from "react-router-dom";
 import authimg from "../../assets/authimg.svg";
@@ -6,11 +6,11 @@ import { useAuth0 } from "@auth0/auth0-react";
 import Footer from "../../components/footer/Footer.js";
 import { Usercontext } from "../../App.js";
 
-
 const Login = () => {
   const { loginWithRedirect } = useAuth0();
   const { darkmode } = useContext(Usercontext);
   
+
   return (
     <>
       <div id="login" className={darkmode ? "dark" : ""}>
