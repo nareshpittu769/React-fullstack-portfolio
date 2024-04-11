@@ -23,14 +23,14 @@ const Contact = () => {
         (res) => {
           console.log("SUCCESS!");
           console.log(res.message);
-          toast.success("Message sent")
-          setName('')
-          setEmail('')
-          setMessage('')
+          toast.success("Message sent");
+          setName("");
+          setEmail("");
+          setMessage("");
         },
         (error) => {
           console.log("FAILED...", error.text);
-          toast.success("Message not sent")
+          toast.success("Message not sent");
         }
       );
   };
@@ -51,13 +51,13 @@ const Contact = () => {
   return (
     <>
       <div id="contact">
-        <div className="container wrapper ">
+        <div className="container">
           <Title title="Contact Me " />
           <div className="row1">
             <div className="img-div">
               <img src={contactimg} alt="contact-img" />
             </div>
-            <div className="form">
+            <div className="w-full">
               <form className="form" ref={form} onSubmit={sendEmail}>
                 <input
                   type="text"
@@ -88,8 +88,13 @@ const Contact = () => {
                   placeholder="Enter Your Messaage Here.."
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
-                <div className="submit">
-                  <input type="submit" value="Submit" style={{cursor:"pointer"}} />
+                <div className="submit w-full">
+                  <input
+                    className="btn"
+                    type="submit"
+                    value="Submit"
+                    style={{ cursor: "pointer" }}
+                  />
 
                   <button type="reset">Reset</button>
                 </div>

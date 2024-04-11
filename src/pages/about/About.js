@@ -93,7 +93,9 @@ const About = () => {
               }
             </div>
           </div>
-          <Contact />
+          <div className="row4 w-full">
+            <Contact />
+          </div>
         </div>
         <Footer />
       </div>
