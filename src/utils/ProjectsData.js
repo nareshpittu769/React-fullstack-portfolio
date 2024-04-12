@@ -12,7 +12,7 @@ const Featured = [
     ],
     discription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis gravida tellus, nec pellentesque quam egestas id. Mauris ultricies, arcu sit amet auctor maximus, elit est tristique felis, in porta nunc augue eu libero. Aenean feugiat magna libero, sed posuere nulla porta id. Ut dictum ornare neque ac faucibus. Nam sed nisl mollis, accumsan sem at, aliquam est. Donec fringilla rutrum orci in convallis. Integer et suscipit odio. Curabitur vehicula dapibus neque, nec aliquet mi efficitur quis. Proin ac nunc nisi. Nullam placerat, odio at posuere tristique, urna metus sagittis odio, a eleifend risus lectus in s",
-    status: "pending",
+    status: "completed",
     livelink: "https://nareshchandragiri.netlify.app/",
     gitlink: "https://github.com/nareshpittu769/React-fullstack-portfolio",
   },
